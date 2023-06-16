@@ -7,6 +7,13 @@
  *    hobbies
  */
 
+const hobbies = ['Drawing', 'Video Games', 'Cooking', 'Skating', 'Skydiving'];
+
+for (index of hobbies) {
+    console.log(index);
+}
+
+console.log('Total Hobbies', hobbies.length);
 
 // Example output
 // 1. swimming
@@ -25,6 +32,11 @@
  * 4. Output the array and number of times teal was found
  */
 
+const colors = ['teal','blue','aqua','cyan','bluegreen','marine','teal'];
+let tealCount = colors.filter((indexValue) => indexValue === 'teal');
+
+console.log(colors);
+console.log('Teal was found', tealCount.length, 'times');
 
 // Example output
 // green, red, teal, orange, teal
@@ -41,6 +53,12 @@
  * 4. Output the original array, odd number array and even number array
  */
 
+const numArr = [1,2,3,4,5,6,7,8,9,10,66,33,98];
+const oddNumbers = numArr.filter((number) => number %2 !==0);
+const evenNumbers = numArr.filter((number) => number %2 !==1);
+console.log('Odds', oddNumbers);
+console.log('Evens', evenNumbers);
+
 
 // Example output
 // 3, 7, 2, 8, 11, 4, 2
@@ -56,6 +74,11 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+
+const bools = [true,true,false,false,false,true,false,true];
+const toggled = []; 
+
+
 
 
 // Example output
