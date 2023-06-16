@@ -75,11 +75,15 @@ console.log('Evens', evenNumbers);
  * 4. Output both arrays
  */
 
+//I completed the following lines after the group project. 
+
 const bools = [true,true,false,false,false,true,false,true];
-const toggled = []; 
+const toggled = [];
 
-
-
+bools.forEach((i) => { if (i) toggled.push(false); else toggled.push(true) 
+});
+console.log('Original Arr',bools);
+console.log('Flipped Arr', toggled);
 
 // Example output
 // true, false, true, true
@@ -95,6 +99,13 @@ const toggled = [];
  *    NOTE: You should not need a second array here.
  * 3. Output the array
  */
+const zeroArr = [3,4,1,3,5,0,2,0,0,0];
+console.log('Before filtering', zeroArr);
+
+while(zeroArr[zeroArr.length-1] ===0) {
+    zeroArr.pop();
+}
+console.log('Removes Zeroes from End of Array', zeroArr);
 
 
 // Example output
@@ -113,6 +124,9 @@ const toggled = [];
  *    greatest position distance for that array is 3.
  * 3. Output the array and its greatest position distance
  */
+const distArr = [24,4,1,3,5,0,2,7,9,2,3,6,5,23,6,7,24,1,5,2,3,5,5,4,1,5];
+let dist = 0;
+
 
 
 // Example output
